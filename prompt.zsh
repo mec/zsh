@@ -9,13 +9,13 @@ function git_prompt_info {
       gitstatus="%{$fg[green]%}merged%{$reset_color%}"
     fi
   elif [[ ${gitst} =~ "Changes to be committed" ]]; then
-    gitstatus="(${ref#refs/heads/})%{$reset_color%}"
+    gitstatus="%{$fg[black]%}(${ref#refs/heads/})%{$reset_color%}"
   elif [[ ${gitst} =~ "use \"git add" ]]; then
-    gitstatus="%{$fg[grey]%}(${ref#refs/heads/} *)%{$reset_color%}"
+    gitstatus="%{$fg[black]%}(${ref#refs/heads/} *)%{$reset_color%}"
   elif [[ -n `git checkout HEAD 2> /dev/null | grep ahead` ]]; then
-    gitstatus="%{$fg[yellow]%}(${ref#refs/heads/} ⇡)%{$reset_color%}"
+    gitstatus="%{$fg[black]%}(${ref#refs/heads/} ⇡)%{$reset_color%}"
   else
-    gitstatus="%{$fg[green]%}(${ref#refs/heads/})%{$reset_color%}"
+    gitstatus="%{$fg[black]%}(${ref#refs/heads/})%{$reset_color%}"
   fi
 
   if [[ -n $ref ]]; then
@@ -23,4 +23,4 @@ function git_prompt_info {
   fi
 }
 #❯
-PROMPT='%{$fg[cyan]%}%~%<<%{${reset_color}%} $(git_prompt_info) ${PR_BOLD_YELLOW}❯ %{${reset_color}%} '
+PROMPT='%{$fg[cyan]%}%~%<<%{${reset_color}%} $(git_prompt_info) ${PR_BOLD_MAGENTA}❯ %{${reset_color}%} '
