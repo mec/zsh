@@ -15,7 +15,7 @@ function git_prompt_info {
   elif [[ -n `git checkout HEAD 2> /dev/null | grep ahead` ]]; then
     gitstatus="%{$fg[yellow]%}*%{$reset_color%}"
   else
-    gitstatus="%{$fg[green]%}${ref#refs/heads/}"
+    gitstatus="%{$fg[green]%}(${ref#refs/heads/})"
   fi
 
   if [[ -n $ref ]]; then
@@ -23,4 +23,4 @@ function git_prompt_info {
   fi
 }
 
-PROMPT='%~%<< $(git_prompt_info) ${PR_BOLD_YELLOW}❯❯❯%{${reset_color}%} '
+PROMPT='%{$fg[blue]%}%~%<<%{${reset_color}%} $(git_prompt_info) ${PR_BOLD_YELLOW}❯❯❯%{${reset_color}%} '
