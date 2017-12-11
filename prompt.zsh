@@ -6,7 +6,7 @@ function git_prompt_info {
     if [[ ${gitst} =~ "unmerged" ]]; then
       gitstatus=" %{$fg[red]%}unmerged%{$reset_color%}"
     else
-      gitstatus="[%{$fg[green]%}merged%{$reset_color%}]"
+      gitstatus="%{$fg[green]%}merged%{$reset_color%}"
     fi
   elif [[ ${gitst} =~ "Changes to be committed" ]]; then
     gitstatus="%{$fg[blue]%}${ref#refs/heads/}%{$reset_color%}"
@@ -15,7 +15,7 @@ function git_prompt_info {
   elif [[ -n `git checkout HEAD 2> /dev/null | grep ahead` ]]; then
     gitstatus="%{$fg[yellow]%}*%{$reset_color%}"
   else
-    gitstatus=''
+    gitstatus="%{$fg[green]%}${ref#refs/heads/}"
   fi
 
   if [[ -n $ref ]]; then
