@@ -4,6 +4,6 @@ alias ls='ls -lh'
 # Same as above, but in long listing format
 alias ll='ls -lh'
 
-# Single l
+# Single gives human readable everything
 alias l='ls -ahl'
 
