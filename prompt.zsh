@@ -13,7 +13,7 @@ function git_prompt_info {
   elif [[ ${gitst} =~ "use \"git add" ]]; then
     gitstatus="%{$fg[red]%}(${ref#refs/heads/})%{$reset_color%}"
   elif [[ -n `git checkout HEAD 2> /dev/null | grep ahead` ]]; then
-    gitstatus="%{$fg[yellow]%}*%{$reset_color%}"
+    gitstatus="%{$fg[yellow]%}(${ref#refs/heads/})%{$reset_color%}"
   else
     gitstatus="%{$fg[green]%}(${ref#refs/heads/})"
   fi
