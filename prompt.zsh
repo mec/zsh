@@ -4,7 +4,7 @@ function git_prompt_info {
 
   if [[ -f .git/MERGE_HEAD ]]; then
     if [[ ${gitst} =~ "unmerged" ]]; then
-      gitstatus=" %{$fg[red]%}unmerged%{$reset_color%}"
+      gitstatus="%{$fg[red]%}unmerged%{$reset_color%}"
     else
       gitstatus="%{$fg[green]%}merged%{$reset_color%}"
     fi
