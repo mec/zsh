@@ -7,3 +7,5 @@ alias ll='ls -lh'
 # Single gives human readable everything
 alias l='ls -ahl'
 
+# clear
+alias clr='clear'
