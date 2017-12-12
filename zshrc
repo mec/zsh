@@ -9,6 +9,6 @@ source ~/.zsh/aliases.zsh
 source ~/.zsh/bindkeys.zsh
 source ~/.zsh/functions.zsh
 source ~/.zsh/history.zsh
-source ~/.zsh/zsh_hooks.zsh
+#source ~/.zsh/zsh_hooks.zsh
 source ~/.zsh/async.zsh
 source ~/.zsh/pure.zsh
