@@ -14,6 +14,5 @@ source ~/.zsh/async.zsh
 source ~/.zsh/pure.zsh
 
 # pure prompt on one line
-prompt pure
 prompt_newline='%666v'
 PROMPT=" $PROMPT"
