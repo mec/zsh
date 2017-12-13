@@ -30,3 +30,7 @@ https://github.com/tonsky/FiraCode
 - Change shell to zsh if not already
 
 ```chsh /bin/zsh```
+
+- Install zsh-completions: 
+
+```brew install zsh-completions```

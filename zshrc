@@ -1,6 +1,6 @@
 # add all the sub files
 
-source ~/.zsh/setopt.zsh
+source ~/.zsh/options.zsh
 source ~/.zsh/exports.zsh
 source ~/.zsh/completion.zsh
 source ~/.zsh/aliases.zsh
