@@ -31,6 +31,8 @@ https://github.com/tonsky/FiraCode
 
 ```chsh /bin/zsh```
 
-- Install zsh-completions: 
+- Install zsh-completions and zsh-syntax-highlighting: 
 
 ```brew install zsh-completions```
+
+```brew install zsh-syntax-highlighting```
