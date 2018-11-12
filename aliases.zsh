@@ -8,6 +8,7 @@ alias clr='clear'
 
 # git
 alias gfp='git push --force-with-lease'
+alias ga='git add'
 alias gc='git commit'
 alias gs='git status'
-alias gc='git checkout'
+alias gaa="git add ."
