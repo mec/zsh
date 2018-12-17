@@ -12,3 +12,9 @@ alias ga='git add'
 alias gc='git commit'
 alias gs='git status'
 alias gaa="git add ."
+alias gp="git pull"
+alias gl="git log"
+
+# docker
+alias dsa='docker container stop $(docker ps -aq)'
+alias dl='docker container ls'
