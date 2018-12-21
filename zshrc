@@ -12,6 +12,6 @@ source ~/.zsh/pure.zsh
 # add external files
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# pure prompt on one line
-#prompt_newline='%666v'
+# comment to have newline
+# prompt_newline='%666v'
 PROMPT=" $PROMPT" PATH="/usr/local/opt/openssl/bin:$PATH"
