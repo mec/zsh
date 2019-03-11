@@ -18,3 +18,7 @@ alias gl="git log"
 # docker
 alias dsa='docker container stop $(docker ps -aq)'
 alias dl='docker container ls'
+
+## bundler
+alias be='bundle exec'
+alias bi='bundle install'
